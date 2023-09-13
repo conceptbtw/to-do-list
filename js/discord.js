@@ -1,5 +1,5 @@
 const clientId = "1150001233772433429";
-const redirectUri = "http://localhost:5500/index.html";
+const redirectUri = "https://conceptbtw.github.io/to-do-list";
 
 const loginUrl = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(
   redirectUri

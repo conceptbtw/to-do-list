@@ -8,10 +8,10 @@
 }
 
 :root {
-  --first-color: #f7fbfc;
-  --second-color: #d6e6f2;
-  --third-color: #b9d7ea;
-  --fourth-color: #769fcd;
+  --first-color: #EDE4FF;
+  --second-color: #D7BBF5;
+  --third-color: #A076F9;
+  --fourth-color: #6528F7;
 }
 
 .container {
@@ -20,12 +20,12 @@
 }
 
 h1 {
-  color: white;
+  color: var(--first-color);
   font-size: 3em;
 }
 
 h2 {
-  color: white;
+  color: var(--first-color);
   font-size: 2em;
 }
 
@@ -36,4 +36,17 @@ a {
 button {
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+input, select {
+  background-color: var(--first-color);
+}
+
+option:checked {
+  background-color: var(--second-color);
 }

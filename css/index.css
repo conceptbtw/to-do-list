@@ -1,3 +1,7 @@
+html {
+  font-size: 12px;
+}
+
 body {
   background-color: var(--first-color);
   display: flex;
@@ -16,6 +20,10 @@ body {
   padding: 2em;
 }
 
+.header__title {
+  opacity: 0;
+}
+
 .header__buttons {
   display: flex;
   flex-direction: row;
@@ -24,7 +32,7 @@ body {
 }
 
 .header__buttons button {
-  color: white;
+  color: var(--first-color);
   font-size: 1em;
   padding: 1em;
   border: none;
@@ -65,13 +73,13 @@ body {
 
 .user-avatar {
   width: 4em;
-  border: 0.125em solid white;
+  border: 0.125em solid var(--first-color);
   border-radius: 50%;
 }
 
 .user-name {
   font-size: 1em;
-  color: white;
+  color: var(--first-color);
 }
 
 .content {
@@ -133,7 +141,7 @@ body {
 }
 
 .new-task button {
-  color: white;
+  color: var(--first-color);
   background-color: var(--fourth-color);
   font-size: 1em;
   padding: 1em;
@@ -163,11 +171,11 @@ body {
 }
 
 .task span {
-  color: white;
+  color: var(--first-color);
 }
 
 .task button {
-  color: white;
+  color: var(--first-color);
   font-size: 1em;
   padding: 1em;
   border: none;
@@ -207,6 +215,29 @@ body {
 }
 
 .footer__social-link {
-  color: white;
+  color: var(--first-color);
   font-size: 2em;
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.25);
+}
+
+@media (min-width: 576px) {
+  .header__title {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
 }
