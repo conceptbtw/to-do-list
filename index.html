@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">To-Do List</h1>
+      <div class="header__buttons">
+        <button class="header__button-clear" id="clear-local-storage">
+          Clear All
+        </button>
+        <div class="user-info" style="display: none">
+          <div class="user-avatar-container">
+            <img class="user-avatar" src="" alt="User Avatar" />
+          </div>
+          <p class="user-name"></p>
+        </div>
+        <button class="header__button-login" id="discord-login">Login</button>
+        <button
+          class="header__button-logout"
+          id="discord-logout"
+          style="display: none"
+        >
+          Logout
+        </button>
+      </div>
+    </header>
+    <div class="content container">
+      <div class="new-task">
+        <div class="new-task__input">
+          <input
+            type="text"
+            placeholder="Enter The Task Here..."
+            id="task-input"
+            class="new-task__input-field"
+          />
+          <button id="push" class="new-task__button">Add</button>
+        </div>
+        <div class="new-task__category">
+          <input
+            type="text"
+            placeholder="Enter Category Name..."
+            id="category-input"
+            class="new-task__category-field"
+          />
+          <button id="add-category" class="new-task__category-button">
+            Add Category
+          </button>
+        </div>
+        <div class="new-task__selects">
+          <select
+            id="category-select"
+            class="new-task__category-select"
+          ></select>
+          <select id="task-filter" class="new-task__filter-select">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </div>
+      <div id="tasks" class="task-list container"></div>
+    </div>
+    <footer class="footer">
+      <div class="footer__social-links">
+        <a
+          href="https://www.youtube.com/@conceptbtw"
+          class="footer__social-link"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.twitch.tv/conceptbytheway"
+          class="footer__social-link"
+          ><i class="fa-brands fa-twitch"></i
+        ></a>
+        <a href="https://www.tiktok.com/@conceptbtw" class="footer__social-link"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/conceptbytheway"
+          class="footer__social-link"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/conceptbtw" class="footer__social-link"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/discord.js"></script>
+  </body>
+</html>
