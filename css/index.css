@@ -166,12 +166,18 @@ body {
 .task {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
 
+.category {
+  position: absolute;
+}
+
 .task span {
   color: var(--first-color);
+  margin-left: 1em;
 }
 
 .task button {
@@ -222,6 +228,12 @@ body {
 
 .footer__social-link:hover {
   transform: scale(1.25);
+}
+
+.completed #taskname, .completed .category {
+  text-decoration: line-through;
+  text-decoration-color: var(--first-color);
+  text-decoration-thickness: 0.125em;
 }
 
 @media (min-width: 576px) {

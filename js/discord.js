@@ -1,12 +1,12 @@
 const clientId = "1150001233772433429";
-const redirectUri = "https://conceptbtw.github.io/to-do-list";
+const redirectUri = "https://conceptbtw.github.io/to-do-list/";
 
 const loginUrl = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(
   redirectUri
 )}&response_type=token&scope=identify`;
 
-const loginButton = document.getElementById("discord-login");
-const logoutButton = document.getElementById("discord-logout");
+const loginButton = document.querySelector("#discord-login");
+const logoutButton = document.querySelector("#discord-logout");
 
 function displayUserData(userName, avatarURL) {
   const userAvatar = document.querySelector(".user-avatar");
