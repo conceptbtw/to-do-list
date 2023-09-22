@@ -241,15 +241,15 @@ body {
   html, input::placeholder, select {
     font-size: 12px;
   }
-
-  .header__title {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 768px) {
   html, input::placeholder, select {
     font-size: 14px;
+  }
+
+  .header__title {
+    opacity: 1;
   }
 
   .user-info {
