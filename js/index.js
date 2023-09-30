@@ -76,11 +76,10 @@ const displayTasks = () => {
     taskInnerDiv.innerHTML = `
       <div class="task-info">
         <button class="complete">
-          ${
-            isCompleted
-              ? '<i class="fa-regular fa-square-check"></i>'
-              : '<i class="fa-regular fa-square"></i>'
-          }
+          ${isCompleted
+        ? '<i class="fa-regular fa-square-check"></i>'
+        : '<i class="fa-regular fa-square"></i>'
+      }
         </button>
         <span id="taskname">${taskName}</span>
       </div>

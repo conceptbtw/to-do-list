@@ -1,4 +1,6 @@
-html, input::placeholder, select {
+html,
+input::placeholder,
+select {
   font-size: 10px;
 }
 
@@ -81,6 +83,9 @@ body {
 .user-name {
   font-size: 1em;
   color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -231,20 +236,27 @@ body {
   transform: scale(1.25);
 }
 
-.completed #taskname, .completed .category {
+.completed #taskname,
+.completed .category {
   text-decoration: line-through;
   text-decoration-color: var(--first-color);
   text-decoration-thickness: 0.125em;
 }
 
 @media (min-width: 576px) {
-  html, input::placeholder, select {
+
+  html,
+  input::placeholder,
+  select {
     font-size: 12px;
   }
 }
 
 @media (min-width: 768px) {
-  html, input::placeholder, select {
+
+  html,
+  input::placeholder,
+  select {
     font-size: 14px;
   }
 
@@ -253,16 +265,15 @@ body {
   }
 
   .user-info {
-    position: absolute;
-    right: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 75%;
   }
 }
 
 @media (min-width: 992px) {
-  html, input::placeholder, select {
+
+  html,
+  input::placeholder,
+  select {
     font-size: 16px;
   }
 }

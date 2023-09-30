@@ -43,7 +43,8 @@ button:hover {
   transform: scale(1.05);
 }
 
-input, select {
+input,
+select {
   background-color: var(--first-color);
 }
 
